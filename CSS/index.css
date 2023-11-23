@@ -17,17 +17,18 @@ body {
   text-decoration: underline 3px var(--accent);
 }
 
-.subHeading {
+.subHeading,
+p {
   text-align: center;
   color: var(--text);
-  text-decoration: underline 3px var(--accent);
+  font-size: 1.1rem;
 }
 
 .mainDiv {
   background-color: var(--divBackground);
   animation: divTransition 10s 1s infinite;
   border: var(--accent) solid 2px;
-  height: 18rem;
+  height: 20rem;
   width: 34rem;
   margin: auto;
 }
