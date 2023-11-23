@@ -1,0 +1,67 @@
+/* Custom Properties */
+:root {
+  --background: #718b6f;
+  --divBackground: #8aa088;
+  --text: #eae6eb;
+  --input: #e0e6e6;
+  --accent: #191419;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.mainHeading {
+  text-align: center;
+  color: var(--text);
+  text-decoration: underline 3px var(--accent);
+}
+
+.subHeading,
+p {
+  text-align: center;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.mainDiv {
+  background-color: var(--divBackground);
+  animation: divTransition 10s 1s infinite;
+  border: var(--accent) solid 2px;
+  height: 20rem;
+  width: 34rem;
+  margin: auto;
+}
+
+@keyframes divTransition {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 10px 10px var(--divBackground), 20px 20px var(--accent),
+      30px 30px var(--input);
+  }
+}
+
+.group {
+  text-align: center;
+}
+
+.group input {
+  width: 12rem;
+  height: 2rem;
+  border: var(--accent) outset 0.2rem;
+  border-radius: 1.2rem;
+  background-color: var(--input);
+}
+
+.group button {
+  width: 8rem;
+  background-color: var(--input);
+  border: var(--background) 0.35rem solid;
+  color: var(--background);
+}
+
+.group button:hover {
+  translate: 10px 10px;
+}
